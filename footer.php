@@ -43,7 +43,7 @@
                 <?php getRecentPosts($this,8); ?>
 			</div>
             <div class="meta-item meta-comments">
-                <h3 class="meta-title">最新评论</h3>
+                <h3 class="meta-title">最近评论</h3>
                 <?php $this->widget('Widget_Comments_Recent','pageSize=8')->to($comments); ?>
                 <?php while($comments->next()): ?>
                 <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?> : <?php $comments->excerpt(25, '...'); ?></a></li>
