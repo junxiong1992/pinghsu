@@ -15,7 +15,7 @@
 				<a class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>">GITHUB</a>
 			<?php endif; ?>
 			<?php if ($this->options->socialtwitter): ?>
-				<a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>">TWITTER</a>
+				<a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>">QQ</a>
 			<?php endif; ?>
 			</div>
 		</div>
@@ -39,11 +39,11 @@
 				</div>
 			</div>
 			<div class="meta-item meta-posts">
-				<h3 class="meta-title">RECENT POSTS</h3>
+				<h3 class="meta-title">最新文章</h3>
                 <?php getRecentPosts($this,8); ?>
 			</div>
             <div class="meta-item meta-comments">
-                <h3 class="meta-title">RECENT COMMENTS</h3>
+                <h3 class="meta-title">最新评论</h3>
                 <?php $this->widget('Widget_Comments_Recent','pageSize=8')->to($comments); ?>
                 <?php while($comments->next()): ?>
                 <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?> : <?php $comments->excerpt(25, '...'); ?></a></li>
