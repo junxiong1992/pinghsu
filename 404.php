@@ -9,7 +9,7 @@
 		<meta http-equiv="Cache-Control" content="no-siteapp"/><?php if($this->options->favicon): ?>
         <link rel="shortcut icon" href="<?php $this->options->favicon(); ?>"><?php endif;?><?php if($this->options->iosicon): ?>
         <link rel="apple-touch-icon" href="<?php $this->options->iosicon();?>"><?php endif; ?>
-        <title>Nothing here - <?php $this->options->title() ?></title>
+        <title>页面找不到 - <?php $this->options->title() ?></title>
         <style>
         body{
             margin:0;padding:0;
@@ -130,8 +130,8 @@
                 </header>
                 <section>
                     <div class="title404">
-                        <p>I have no secret of success but hard work.</p>
-                    </div><a href="<?php $this->options->siteUrl(); ?>" class="index404">Back Home</a>
+                        <p>哎呀！页面找不到了！去别处逛逛吧！</p>
+                    </div><a href="<?php $this->options->siteUrl(); ?>" class="index404">返回主页</a>
                 </section>
             </div>
         </div>
